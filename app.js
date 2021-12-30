@@ -26,13 +26,36 @@
 
 
 //오브젝트
+// const player = {
+//     name: "nico",
+//     points: 10,
+//     fat: true,
+// }
+// console.log(player)
+// console.log(player.name)
+// player.lastName = "potato"
+// player.points = 15
+// console.log(player)
+
+// //함수
+
+// function hello(name, age) {
+//     console.log('Hello, My name is ' + name + " and I'm " + age + " years old")
+// }
+
+// hello("suzan", 15)
+// hello("dico", 20)
+// hello("minji", 35)
+
 const player = {
     name: "nico",
-    points: 10,
-    fat: true,
+    sayHello: function(name) {
+        console.log("hello " + name + " nice meet you ")
+        document.write("hello " + name + " nice meet you! ")
+    },
 }
-console.log(player)
+
 console.log(player.name)
-player.lastName = "potato"
-player.points = 15
-console.log(player)
+player.sayHello("lynn")
+player.sayHello("dico")
+player.sayHello("suzan")
