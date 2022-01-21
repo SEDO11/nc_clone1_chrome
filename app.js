@@ -59,3 +59,10 @@ console.log(player.name)
 player.sayHello("lynn")
 player.sayHello("dico")
 player.sayHello("suzan")
+
+const test = {
+    myName: function (name) {
+      document.write('Hello My is ' + name + ' nice meet you')  
+    },
+}
+test.myName("Hoon")
