@@ -1,0 +1,32 @@
+header {
+    width: 400px;
+    display: inline-block;
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+}
+
+section {
+    width: 400px;
+    background-color: greenyellow;
+    padding: 5px;
+}
+
+article {
+    display: inline-block;
+}
+
+button {
+    font-size: 20px;
+    display: inline-block;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+span {
+    font-size: 30px;
+}
