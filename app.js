@@ -109,46 +109,84 @@
 // }
 // test.myName("Hoon")
 
-let result = document.getElementById('result')
-let sub = document.getElementById('sub')
+// let result = document.getElementById('result')
+// let sub = document.getElementById('sub')
 
-let num1 = 0
-let num2 = 0
+// let num1 = 0
+// let num2 = 0
 
-function inputNum() {
-    num1 = window.Number(prompt('첫번째 숫자를 입력하세요'))
-    num2 = window.Number(prompt('두번째 숫자를 입력하세요'))
+// function inputNum() {
+//     num1 = window.Number(prompt('첫번째 숫자를 입력하세요'))
+//     num2 = window.Number(prompt('두번째 숫자를 입력하세요'))
+// }
+
+// const cal = {
+
+//     add: function () {
+//         let addResult = num1 + num2
+//         sub.innerHTML = '(덧셈)'
+//         result.innerHTML = addResult
+//     },
+
+//     min: function () {
+//         let minResult = num1 - num2
+//         sub.innerHTML = '(뺄셈)'
+//         result.innerHTML = minResult
+//             },
+
+//     mun: function () {
+//         let munResult = num1 * num2
+//         sub.innerHTML = '(곱셈)'
+//         result.innerHTML = munResult
+//             },
+
+//     divi: function () {
+//         let diviResult = num1 / num2
+//         sub.innerHTML = '(나눗셈)'
+//         result.innerHTML = diviResult
+//             },
+
+//     squ: function () {
+//         let squResult = num1 ** num2
+//         sub.innerHTML = '(제곱)'
+//         result.innerHTML = squResult
+//         },
+// }
+
+const age = 96
+function calculateKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2
 }
 
-const cal = {
+const krAge = calculateKrAge(age)
 
-    add: function () {
-        let addResult = num1 + num2
-        sub.innerHTML = '(덧셈)'
-        result.innerHTML = addResult
+console.log(krAge)
+
+const NUM1 = 4
+const NUM2 = 5
+
+const calculator = {
+    add: function (a, b) {
+        return a + b
     },
 
-    min: function () {
-        let minResult = num1 - num2
-        sub.innerHTML = '(뺄셈)'
-        result.innerHTML = minResult
-            },
+    min: function (a, b) {
+        return a - b
+    },
 
-    mun: function () {
-        let munResult = num1 * num2
-        sub.innerHTML = '(곱셈)'
-        result.innerHTML = munResult
-            },
+    divi: function (a, b) {
+        return a / b
+    },
 
-    divi: function () {
-        let diviResult = num1 / num2
-        sub.innerHTML = '(나눗셈)'
-        result.innerHTML = diviResult
-            },
+    mun: function (a, b) {
+        return a * b  
+    },
 
-    squ: function () {
-        let squResult = num1 ** num2
-        sub.innerHTML = '(제곱)'
-        result.innerHTML = squResult
-        },
+    squ: function (a, b) {
+        return a ** b  
+    },
 }
+
+const result = calculator.add(2, 3)
+
+console.log(result)
