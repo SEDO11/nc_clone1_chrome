@@ -47,15 +47,57 @@
 // hello("dico", 20)
 // hello("minji", 35)
 
-const player = {
-    name: "nico",
-    sayHello: function(name) {
-        console.log("hello " + name + " nice meet you ")
-        document.write("hello " + name + " nice meet you! ")
+// const player = {
+//     name: "nico",
+//     sayHello: function(name) {
+//         console.log("hello " + name + " nice meet you ")
+//         document.write("hello " + name + " nice meet you! ")
+//     },
+// }
+
+// console.log(player.name)
+// player.sayHello("lynn")
+// player.sayHello("dico")
+// player.sayHello("suzan")
+
+// const player2 = {
+//     name: "nico",
+//     age: "25",
+// }
+// console.log(player2.name)
+// console.log(player2)
+// player2.name = "nicolas"
+// console.log(player2)
+// player2.sexy = "soon"
+// console.log(player2)
+
+const NUM1 = 4
+const NUM2 = 5
+
+const calculator = {
+    add: function (a, b) {
+        console.log(a + b)
+    },
+
+    min: function (a, b) {
+        console.log(a - b)
+    },
+
+    divi: function (a, b) {
+        console.log(a / b)
+    },
+
+    mun: function (a, b) {
+        console.log(a * b)  
+    },
+
+    squ: function (a, b) {
+        console.log(a ** b)  
     },
 }
 
-console.log(player.name)
-player.sayHello("lynn")
-player.sayHello("dico")
-player.sayHello("suzan")
+calculator.add(NUM1, NUM2)
+calculator.min(NUM1, NUM2)
+calculator.mun(NUM1, NUM2)
+calculator.divi(NUM1, NUM2)
+calculator.squ(NUM1, NUM2)
