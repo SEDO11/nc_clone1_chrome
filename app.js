@@ -153,40 +153,54 @@
 //         },
 // }
 
-const age = 96
-function calculateKrAge(ageOfForeigner) {
-    return ageOfForeigner + 2
+// const age = 96
+// function calculateKrAge(ageOfForeigner) {
+//     return ageOfForeigner + 2
+// }
+
+// const krAge = calculateKrAge(age)
+
+// console.log(krAge)
+
+// const NUM1 = 4
+// const NUM2 = 5
+
+// const calculator = {
+//     add: function (a, b) {
+//         return a + b
+//     },
+
+//     min: function (a, b) {
+//         return a - b
+//     },
+
+//     divi: function (a, b) {
+//         return a / b
+//     },
+
+//     mun: function (a, b) {
+//         return a * b  
+//     },
+
+//     squ: function (a, b) {
+//         return a ** b  
+//     },
+// }
+
+// const result = calculator.add(2, 3)
+
+// console.log(result)
+
+//조건문
+
+const PRINT = document.getElementById('print')
+
+const age = Number(prompt('당신은 몇 살 인가요?'))
+
+if(age < 20) {
+    PRINT.innerHTML = '초년층'
+} else if (age < 40) {
+    PRINT.innerHTML = '중년층'
+} else {
+    PRINT.innerHTML = '장년층'
 }
-
-const krAge = calculateKrAge(age)
-
-console.log(krAge)
-
-const NUM1 = 4
-const NUM2 = 5
-
-const calculator = {
-    add: function (a, b) {
-        return a + b
-    },
-
-    min: function (a, b) {
-        return a - b
-    },
-
-    divi: function (a, b) {
-        return a / b
-    },
-
-    mun: function (a, b) {
-        return a * b  
-    },
-
-    squ: function (a, b) {
-        return a ** b  
-    },
-}
-
-const result = calculator.add(2, 3)
-
-console.log(result)
