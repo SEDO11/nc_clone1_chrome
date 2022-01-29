@@ -193,14 +193,17 @@
 
 //조건문
 
-const PRINT = document.getElementById('print')
+// const PRINT = document.getElementById('print')
 
-const age = Number(prompt('당신은 몇 살 인가요?'))
+// const age = Number(prompt('당신은 몇 살 인가요?'))
 
-if(age < 20) {
-    PRINT.innerHTML = '초년층'
-} else if (age < 40) {
-    PRINT.innerHTML = '중년층'
-} else {
-    PRINT.innerHTML = '장년층'
-}
+// if(age < 20) {
+//     PRINT.innerHTML = '초년층'
+// } else if (age < 40) {
+//     PRINT.innerHTML = '중년층'
+// } else {
+//     PRINT.innerHTML = '장년층'
+// }
+
+const title = document.getElementById('title')
+title.innerText = "안뇽"
