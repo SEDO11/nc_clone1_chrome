@@ -205,5 +205,11 @@
 //     PRINT.innerHTML = '장년층'
 // }
 
-const title = document.getElementById('title')
-title.innerText = "안뇽"
+// const title = document.getElementById('title')
+// title.innerText = "안뇽"
+
+const SELECT = document.querySelector(".hello h1")
+const SELECT_ALL = document.querySelectorAll(".hello h1")
+
+console.log(SELECT)
+console.log(SELECT_ALL)
