@@ -210,6 +210,48 @@
 
 const SELECT = document.querySelector(".hello h1")
 const SELECT_ALL = document.querySelectorAll(".hello h1")
+const SELECT_CN = document.getElementsByClassName("hello")
+const BODY = document.querySelector("body")
+const BTN = document.querySelector("#bgBtn")
+let btnClick = 0
+let bccClick = 0
 
-console.log(SELECT)
-console.log(SELECT_ALL)
+console.dir(SELECT)
+console.dir(BODY)
+
+function eventClick() {
+    if (btnClick === 0) {
+        console.log("click")
+        SELECT.style.color = "blue"
+        btnClick = 1
+
+    } else {
+        console.log("click")
+        SELECT.style.color = "black"
+        btnClick = 0
+    }
+    
+}
+
+function backChangeColor() {
+    if (bccClick === 0) {
+        BODY.style.backgroundColor = "#333333"
+        BODY.style.color = "white"
+        BTN.innerText = "어두운테마"
+        bccClick = 1
+    } else {
+        BODY.style.backgroundColor = "white"
+        BODY.style.color = "black"
+        BTN.innerText = "밝은테마"
+        bccClick = 0
+    }
+}
+
+function over() {
+    BTN.style.backgroundColor = "blue"
+    BTN.style.color = "white"
+}
+
+BTN.addEventListener("click", backChangeColor)
+BTN.addEventListener("onmouseover", over)
+SELECT.addEventListener("click", eventClick) //클릭하면 읽어서 js를 통해 함수 호출
